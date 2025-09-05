@@ -49,20 +49,26 @@ router.post("/guess", (req, res) => {
 })
 router.post("/guessVoice", (req,res) =>{
   const {id} = req.body;
-  const personaje =  personajeService.getPersonajeVoiceById(id);
-  if (!personaje) {
-      return res.status(404).send({ success: false, mensaje: "Personaje no encontrado" });
+  if (!id) {
+    return res.status(400).send({ success: false, mensaje: "Falta el id en el body" });
   }
-  //filtrar personajes con voz
-  const comparison = gameService.compararConVoice(personaje);
-    if (!comparison) {
-        return res.status(500).send({ success: false, mensaje: "Error al comparar con el personaje secreto" });
-    }
 
-      const { result, hasWon } = comparison;
-    console.log("Resultado de la comparación:", result);
-    res.send({ success: true, resultado: result, hasWon });
-})
+  const personaje = personajeService.getPersonajeVoiceById(id);
+  if (!personaje) {
+      return res.status(404).send({ success: false, mensaje: "Personaje con voz no encontrado" });
+  }
+
+  const comparison = gameService.compararConVoice(personaje);
+  if (!comparison) {
+      return res.status(400).send({ 
+        success: false, 
+        mensaje: "No hay personaje secreto inicializado. Llama primero a /start." 
+      });
+  }
+
+  const { result, hasWon } = comparison;
+  res.send({ success: true, resultado: result, hasWon });
+});
 router.post("/guessPicture", async (req,res)=> {
   const {id} = req.body;
   const personaje = personajeService.getPersonajePictureById(id)

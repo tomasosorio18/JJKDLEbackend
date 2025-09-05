@@ -95,6 +95,8 @@ export const resetDailySecret = async () => {
 let secretCharacter: Personaje | undefined;
 let secretVoiceCharacter: Personaje | undefined;
 let secretLargeCharacter : Personaje | undefined;
+
+
 export const iniciarJuego = async (): Promise<{ id: number; voiceid: number; pictureId: number; voice: string; picture: string; } | null> => {
     const today = getTodayKey();
     let record: DailyRecord | null = await getDailySecret();
