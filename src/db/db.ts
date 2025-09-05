@@ -4,21 +4,6 @@ import Joi from 'joi'
 
 // Cargar variables de entorno
 dotenv.config()
-
-// Aca se validan las variables de entorno
-const envSchema = Joi.object({
-    DB_USER: Joi.string().required(),
-    DB_HOST: Joi.string().required(),
-    DB_NAME: Joi.string().required(),
-    DB_PASSWORD: Joi.string().required(),
-    DB_PORT: Joi.number().default(5432),
-}).unknown()
-
-const { error, value: envVars } = envSchema.validate(process.env)
-if (error) {
-   console.error("Error en las variables de entorno:", error.message)
-    process.exit(1)
-}
  
 class Database {
     private pool: Pool
