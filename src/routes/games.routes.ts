@@ -1,13 +1,36 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import * as gameService from "../services/gameService";
 import * as personajeService from "../services/personajeServices";
 
 const router = express.Router();
 
-router.get("/start", async (req, res) => {
-    const secret = await gameService.iniciarJuego();
-    console.log("Juego iniciado con personaje secreto:", secret);
-    res.send({ success: true, mensaje: "Juego iniciado", personajeId: secret?.id, voiceId: secret?.voiceid, pictureId:secret?.pictureId, voice: secret?.voice, picture: secret?.picture});
+router.get("/start", async (_req: Request, res: Response) => {
+  try {
+    const record = await gameService.iniciarJuego();
+
+    if (!record) {
+      return res.status(500).json({
+        success: false,
+        mensaje: "No se pudo iniciar el juego",
+      });
+    }
+
+    return res.json({
+      success: true,
+      mensaje: "Juego iniciado",
+      personajeId: record.id,
+      voiceId: record.voiceid,
+      pictureId: record.pictureId,
+      voice: record.voice,
+      picture: record.picture,
+    });
+  } catch (error) {
+    console.error("Error al iniciar el juego:", error);
+    return res.status(500).json({
+      success: false,
+      mensaje: "Error interno del servidor",
+    });
+  }
 });
 
 router.get("/secret", async (req, res) => {
@@ -61,8 +84,8 @@ router.post("/guessVoice", (req,res) =>{
   const comparison = gameService.compararConVoice(personaje);
   if (!comparison) {
       return res.status(400).send({ 
-        success: false, 
-        mensaje: "No hay personaje secreto inicializado. Llama primero a /start." 
+        success: true, 
+        mensaje: "No es ese personaje." 
       });
   }
 

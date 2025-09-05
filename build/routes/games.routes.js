@@ -49,10 +49,32 @@ const express_1 = __importDefault(require("express"));
 const gameService = __importStar(require("../services/gameService"));
 const personajeService = __importStar(require("../services/personajeServices"));
 const router = express_1.default.Router();
-router.get("/start", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const secret = yield gameService.iniciarJuego();
-    console.log("Juego iniciado con personaje secreto:", secret);
-    res.send({ success: true, mensaje: "Juego iniciado", personajeId: secret === null || secret === void 0 ? void 0 : secret.id, voiceId: secret === null || secret === void 0 ? void 0 : secret.voiceid, pictureId: secret === null || secret === void 0 ? void 0 : secret.pictureId, voice: secret === null || secret === void 0 ? void 0 : secret.voice, picture: secret === null || secret === void 0 ? void 0 : secret.picture });
+router.get("/start", (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const record = yield gameService.iniciarJuego();
+        if (!record) {
+            return res.status(500).json({
+                success: false,
+                mensaje: "No se pudo iniciar el juego",
+            });
+        }
+        return res.json({
+            success: true,
+            mensaje: "Juego iniciado",
+            personajeId: record.id,
+            voiceId: record.voiceid,
+            pictureId: record.pictureId,
+            voice: record.voice,
+            picture: record.picture,
+        });
+    }
+    catch (error) {
+        console.error("Error al iniciar el juego:", error);
+        return res.status(500).json({
+            success: false,
+            mensaje: "Error interno del servidor",
+        });
+    }
 }));
 router.get("/secret", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const personajeSecreto = yield gameService.getDailySecret();
@@ -103,8 +125,8 @@ router.post("/guessVoice", (req, res) => {
     const comparison = gameService.compararConVoice(personaje);
     if (!comparison) {
         return res.status(400).send({
-            success: false,
-            mensaje: "No hay personaje secreto inicializado. Llama primero a /start."
+            success: true,
+            mensaje: "No es ese personaje."
         });
     }
     const { result, hasWon } = comparison;

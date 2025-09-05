@@ -23,7 +23,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.compararConSecreto = exports.compararConPicture = exports.compararConVoice = exports.getPistaPersonaje = exports.getPersonajeSecreto = exports.iniciarJuego = exports.resetDailySecret = exports.saveDailySecret = exports.getDailySecret = exports.getPreviousRecord = exports.getAllDailyRecords = void 0;
+exports.compararConSecreto = exports.compararConPicture = exports.compararConVoice = exports.getPistaPersonaje = exports.getPersonajeSecreto = exports.iniciarJuego = exports.resetDailySecret = exports.saveDailySecret = exports.getAllDailyRecords = exports.getPreviousRecord = exports.getDailySecret = void 0;
 const db_1 = __importDefault(require("../db/db"));
 const personajeServices_1 = require("./personajeServices");
 const gradeOrder = [
@@ -42,10 +42,65 @@ const getTodayKey = () => {
     const fecha = new Date().toLocaleDateString("en-CA", { timeZone: "America/Santiago" });
     return fecha;
 };
+const getDailySecret = () => __awaiter(void 0, void 0, void 0, function* () {
+    var _a;
+    const today = getTodayKey();
+    const client = yield db_1.default.getClient();
+    try {
+        const res = yield client.query(`SELECT
+         date,
+         guesscharacterid AS "GuessCharacterId",
+         guessvoiceid     AS "GuessVoiceId",
+         guesspictureid   AS "GuessPictureId",
+         voice            AS "Voice",
+         picture          AS "Picture"
+       FROM daily_secret_character
+       WHERE date = $1`, [today]);
+        return (_a = res.rows[0]) !== null && _a !== void 0 ? _a : null;
+    }
+    finally {
+        client.release();
+    }
+});
+exports.getDailySecret = getDailySecret;
+const getPreviousRecord = () => __awaiter(void 0, void 0, void 0, function* () {
+    var _a;
+    const client = yield db_1.default.getClient();
+    try {
+        const res = yield client.query(`SELECT
+         date,
+         guesscharacterid AS "GuessCharacterId",
+         guessvoiceid     AS "GuessVoiceId",
+         guesspictureid   AS "GuessPictureId",
+         voice            AS "Voice",
+         picture          AS "Picture"
+       FROM daily_secret_character
+       ORDER BY date DESC
+       LIMIT 1 OFFSET 1`);
+        const previous = (_a = res.rows[0]) !== null && _a !== void 0 ? _a : null;
+        if (!previous)
+            return null;
+        const pic = (0, personajeServices_1.getPersonajeById)(previous.GuessPictureId);
+        const voi = (0, personajeServices_1.getPersonajeById)(previous.GuessVoiceId);
+        const cha = (0, personajeServices_1.getPersonajeById)(previous.GuessCharacterId);
+        return Object.assign(Object.assign({}, previous), { CharacterName: (cha === null || cha === void 0 ? void 0 : cha.name) || "", PictureCharacterName: (pic === null || pic === void 0 ? void 0 : pic.name) || "", VoiceCharacterName: (voi === null || voi === void 0 ? void 0 : voi.name) || "" });
+    }
+    finally {
+        client.release();
+    }
+});
+exports.getPreviousRecord = getPreviousRecord;
 const getAllDailyRecords = () => __awaiter(void 0, void 0, void 0, function* () {
     const client = yield db_1.default.getClient();
     try {
-        const res = yield client.query("SELECT * FROM daily_secret_Character");
+        const res = yield client.query(`SELECT
+         date,
+         guesscharacterid AS "GuessCharacterId",
+         guessvoiceid     AS "GuessVoiceId",
+         guesspictureid   AS "GuessPictureId",
+         voice            AS "Voice",
+         picture          AS "Picture"
+       FROM daily_secret_character`);
         return res.rows;
     }
     finally {
@@ -53,40 +108,11 @@ const getAllDailyRecords = () => __awaiter(void 0, void 0, void 0, function* () 
     }
 });
 exports.getAllDailyRecords = getAllDailyRecords;
-const getPreviousRecord = () => __awaiter(void 0, void 0, void 0, function* () {
-    const client = yield db_1.default.getClient();
-    try {
-        const res = yield client.query("SELECT * FROM daily_secret_Character ORDER BY date DESC LIMIT 1 OFFSET 1");
-        const previous = res.rows[0];
-        if (!previous)
-            return null;
-        const previousPictureCharacter = (0, personajeServices_1.getPersonajeById)(previous.GuessPictureId);
-        const previousVoiceCharacter = (0, personajeServices_1.getPersonajeById)(previous.GuessVoiceId);
-        const previousCharacter = (0, personajeServices_1.getPersonajeById)(previous.GuessCharacterId);
-        return Object.assign(Object.assign({}, previous), { CharacterName: (previousCharacter === null || previousCharacter === void 0 ? void 0 : previousCharacter.name) || "", PictureCharacterName: (previousPictureCharacter === null || previousPictureCharacter === void 0 ? void 0 : previousPictureCharacter.name) || "", VoiceCharacterName: (previousVoiceCharacter === null || previousVoiceCharacter === void 0 ? void 0 : previousVoiceCharacter.name) || "" });
-    }
-    finally {
-        client.release();
-    }
-});
-exports.getPreviousRecord = getPreviousRecord;
-const getDailySecret = () => __awaiter(void 0, void 0, void 0, function* () {
-    const today = getTodayKey();
-    const client = yield db_1.default.getClient();
-    try {
-        const res = yield client.query("SELECT * FROM daily_secret_Character WHERE date = $1", [today]);
-        return res.rows[0];
-    }
-    finally {
-        client.release();
-    }
-});
-exports.getDailySecret = getDailySecret;
 const saveDailySecret = (guessCharId, guessVoiceId, guessPictureId, voice, picture) => __awaiter(void 0, void 0, void 0, function* () {
     const today = getTodayKey();
     const client = yield db_1.default.getClient();
     try {
-        yield client.query("INSERT INTO daily_secret_Character (date, GuessCharacterId, GuessVoiceId, GuessPictureId, Voice, Picture) VALUES ($1, $2, $3, $4, $5, $6)", [today, guessCharId, guessVoiceId, guessPictureId, voice, picture]);
+        yield client.query("INSERT INTO daily_secret_character (date, GuessCharacterId, GuessVoiceId, GuessPictureId, Voice, Picture) VALUES ($1, $2, $3, $4, $5, $6)", [today, guessCharId, guessVoiceId, guessPictureId, voice, picture]);
     }
     finally {
         client.release();
@@ -97,7 +123,7 @@ const resetDailySecret = () => __awaiter(void 0, void 0, void 0, function* () {
     const today = getTodayKey();
     const client = yield db_1.default.getClient();
     try {
-        yield client.query("DELETE FROM daily_secret_Character WHERE date = $1", [today]);
+        yield client.query("DELETE FROM daily_secret_character WHERE date = $1", [today]);
         secretCharacter = undefined;
         secretVoiceCharacter = undefined;
         secretLargeCharacter = undefined;
@@ -111,33 +137,49 @@ let secretCharacter;
 let secretVoiceCharacter;
 let secretLargeCharacter;
 const iniciarJuego = () => __awaiter(void 0, void 0, void 0, function* () {
+    var _a, _b, _c;
     const today = getTodayKey();
     let record = yield (0, exports.getDailySecret)();
     if (!record) {
         const personajes = (0, personajeServices_1.getAllPersonajes)();
-        let secretCharacter = personajes[Math.floor(Math.random() * personajes.length)];
-        const personajesConVoice = personajes.filter(p => p.voice && p.voice !== "None");
-        const personajesConPicture = personajes.filter(p => p.image_url_large);
-        const randomPicture = Math.floor(Math.random() * personajesConPicture.length);
-        const randomVoice = Math.floor(Math.random() * personajesConVoice.length);
-        secretVoiceCharacter = personajesConVoice[randomVoice];
-        secretLargeCharacter = personajesConPicture[randomPicture];
-        if (secretCharacter) {
-            yield (0, exports.saveDailySecret)(secretCharacter.id, secretVoiceCharacter.id, secretLargeCharacter.id, secretVoiceCharacter.voice, secretLargeCharacter.image_url_large);
-            record = { date: today, GuessCharacterId: secretCharacter.id, GuessVoiceId: secretVoiceCharacter.id, GuessPictureId: secretLargeCharacter.id, Voice: secretVoiceCharacter.voice, Picture: secretLargeCharacter.image_url_large };
+        const withVoice = personajes.filter(p => p.voice && p.voice !== "None");
+        const withPicture = personajes.filter(p => p.image_url_large);
+        if (!personajes.length || !withVoice.length || !withPicture.length) {
+            console.error("No hay suficientes datos para iniciar el juego.");
+            return null;
         }
+        const chosen = personajes[Math.floor(Math.random() * personajes.length)];
+        const chosenVoice = withVoice[Math.floor(Math.random() * withVoice.length)];
+        const chosenPic = withPicture[Math.floor(Math.random() * withPicture.length)];
+        yield (0, exports.saveDailySecret)(chosen.id, chosenVoice.id, chosenPic.id, chosenVoice.voice, chosenPic.image_url_large);
+        record = {
+            date: today,
+            GuessCharacterId: chosen.id,
+            GuessVoiceId: chosenVoice.id,
+            GuessPictureId: chosenPic.id,
+            Voice: chosenVoice.voice,
+            Picture: chosenPic.image_url_large,
+        };
     }
-    if (record) {
-        secretCharacter = (0, personajeServices_1.getPersonajeById)(record.GuessCharacterId);
-        secretVoiceCharacter = (0, personajeServices_1.getPersonajeById)(record.GuessVoiceId);
-        secretLargeCharacter = (0, personajeServices_1.getPersonajeById)(record.GuessPictureId);
-    }
+    // fallback para minúsculas/pascalCase
+    const guessCharacterId = (_a = record.GuessCharacterId) !== null && _a !== void 0 ? _a : record.guesscharacterid;
+    const guessVoiceId = (_b = record.GuessVoiceId) !== null && _b !== void 0 ? _b : record.guessvoiceid;
+    const guessPictureId = (_c = record.GuessPictureId) !== null && _c !== void 0 ? _c : record.guesspictureid;
+    secretCharacter = (0, personajeServices_1.getPersonajeById)(guessCharacterId);
+    secretVoiceCharacter = (0, personajeServices_1.getPersonajeById)(guessVoiceId);
+    secretLargeCharacter = (0, personajeServices_1.getPersonajeById)(guessPictureId);
     if (!secretCharacter || !secretVoiceCharacter || !secretLargeCharacter) {
-        return null; // fallback de seguridad
+        console.error("No se pudo hidratar el estado secreto desde el record:", record);
+        return null;
     }
-    return secretCharacter
-        ? { id: secretCharacter.id, voiceid: secretVoiceCharacter.id, pictureId: secretLargeCharacter.id, voice: secretVoiceCharacter.voice, picture: secretLargeCharacter.image_url_large }
-        : null;
+    // 🔥 siempre devuelve lo mismo, con o sin record
+    return {
+        id: secretCharacter.id,
+        voiceid: secretVoiceCharacter.id,
+        pictureId: secretLargeCharacter.id,
+        voice: secretVoiceCharacter.voice, // 🔹 usar la propiedad real
+        picture: secretLargeCharacter.image_url_large // 🔹 usar la propiedad real
+    };
 });
 exports.iniciarJuego = iniciarJuego;
 const getPersonajeSecreto = () => secretCharacter;

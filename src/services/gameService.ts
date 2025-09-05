@@ -32,50 +32,84 @@ const getTodayKey = () =>
   const fecha = new Date().toLocaleDateString("en-CA", { timeZone: "America/Santiago" });
   return fecha;
   }
-export const getAllDailyRecords = async (): Promise <DailyRecord[]> => {
+export const getDailySecret = async (): Promise<DailyRecord | null> => {
+  const today = getTodayKey();
   const client = await db.getClient();
   try {
-   const res = await client.query("SELECT * FROM daily_secret_Character");
-   return res.rows as DailyRecord[]   
-  }finally{
-    client.release()
-  }
-}
-  export const getPreviousRecord = async (): Promise<ExtendedDailyRecord | null> => {
-  const client = await db.getClient()
-  try {
-    const res = await client.query("SELECT * FROM daily_secret_Character ORDER BY date DESC LIMIT 1 OFFSET 1");
-    const previous = res.rows[0] as DailyRecord | null;
-      if (!previous) return null;
-      const previousPictureCharacter = getPersonajeById(previous.GuessPictureId);
-      const previousVoiceCharacter = getPersonajeById(previous.GuessVoiceId);
-      const previousCharacter = getPersonajeById(previous.GuessCharacterId);
-        return { 
-    ...previous, 
-    CharacterName: previousCharacter?.name || "", 
-    PictureCharacterName: previousPictureCharacter?.name || "", 
-    VoiceCharacterName: previousVoiceCharacter?.name || "" 
-  };
+    const res = await client.query(
+      `SELECT
+         date,
+         guesscharacterid AS "GuessCharacterId",
+         guessvoiceid     AS "GuessVoiceId",
+         guesspictureid   AS "GuessPictureId",
+         voice            AS "Voice",
+         picture          AS "Picture"
+       FROM daily_secret_character
+       WHERE date = $1`,
+      [today]
+    );
+    return (res.rows[0] as DailyRecord) ?? null;
   } finally {
-    client.release()
+    client.release();
   }
+};
 
-}
-export const getDailySecret = async (): Promise<DailyRecord | null> => {
-  const today = getTodayKey()
-  const client = await db.getClient()
+export const getPreviousRecord = async (): Promise<ExtendedDailyRecord | null> => {
+  const client = await db.getClient();
   try {
-    const res = await client.query("SELECT * FROM daily_secret_Character WHERE date = $1", [today])
-    return res.rows[0] as DailyRecord | null;
+    const res = await client.query(
+      `SELECT
+         date,
+         guesscharacterid AS "GuessCharacterId",
+         guessvoiceid     AS "GuessVoiceId",
+         guesspictureid   AS "GuessPictureId",
+         voice            AS "Voice",
+         picture          AS "Picture"
+       FROM daily_secret_character
+       ORDER BY date DESC
+       LIMIT 1 OFFSET 1`
+    );
+    const previous = (res.rows[0] as DailyRecord) ?? null;
+    if (!previous) return null;
+
+    const pic = getPersonajeById(previous.GuessPictureId);
+    const voi = getPersonajeById(previous.GuessVoiceId);
+    const cha = getPersonajeById(previous.GuessCharacterId);
+
+    return {
+      ...previous,
+      CharacterName: cha?.name || "",
+      PictureCharacterName: pic?.name || "",
+      VoiceCharacterName: voi?.name || "",
+    };
   } finally {
-    client.release()
+    client.release();
   }
-}
+};
+
+export const getAllDailyRecords = async (): Promise<DailyRecord[]> => {
+  const client = await db.getClient();
+  try {
+    const res = await client.query(
+      `SELECT
+         date,
+         guesscharacterid AS "GuessCharacterId",
+         guessvoiceid     AS "GuessVoiceId",
+         guesspictureid   AS "GuessPictureId",
+         voice            AS "Voice",
+         picture          AS "Picture"
+       FROM daily_secret_character`
+    );
+    return res.rows as DailyRecord[];
+  } finally {
+    client.release();
+  }
+};
 export const saveDailySecret = async (guessCharId: number, guessVoiceId: number, guessPictureId:number, voice: string, picture: string) => {
   const today = getTodayKey();
   const client = await db.getClient();
   try {
-    await client.query("INSERT INTO daily_secret_Character (date, GuessCharacterId, GuessVoiceId, GuessPictureId, Voice, Picture) VALUES ($1, $2, $3, $4, $5, $6)", [today, guessCharId, guessVoiceId, guessPictureId, voice, picture]);
+    await client.query("INSERT INTO daily_secret_character (date, GuessCharacterId, GuessVoiceId, GuessPictureId, Voice, Picture) VALUES ($1, $2, $3, $4, $5, $6)", [today, guessCharId, guessVoiceId, guessPictureId, voice, picture]);
   } finally {
     client.release();
   }
@@ -84,7 +118,7 @@ export const resetDailySecret = async () => {
   const today = getTodayKey();
   const client = await db.getClient();
   try {
-    await client.query("DELETE FROM daily_secret_Character WHERE date = $1", [today]);
+    await client.query("DELETE FROM daily_secret_character WHERE date = $1", [today]);
       secretCharacter = undefined;
   secretVoiceCharacter = undefined;
   secretLargeCharacter = undefined;
@@ -97,44 +131,63 @@ let secretVoiceCharacter: Personaje | undefined;
 let secretLargeCharacter : Personaje | undefined;
 
 
-export const iniciarJuego = async (): Promise<{ id: number; voiceid: number; pictureId: number; voice: string; picture: string; } | null> => {
-    const today = getTodayKey();
-    let record: DailyRecord | null = await getDailySecret();
-    if (!record) {
+export const iniciarJuego = async (): Promise<{
+  id: number; voiceid: number; pictureId: number; voice: string; picture: string;
+} | null> => {
+  const today = getTodayKey();
+  let record = await getDailySecret();
+
+  if (!record) {
     const personajes = getAllPersonajes();
-    let secretCharacter = personajes[Math.floor(Math.random() * personajes.length)];
-      const personajesConVoice = personajes.filter(
-        p => p.voice && p.voice !== "None"
-    );
-    const personajesConPicture = personajes.filter(
-        p => p.image_url_large
-    );
-    const randomPicture = Math.floor(Math.random() * personajesConPicture.length);
-    const randomVoice = Math.floor(Math.random() * personajesConVoice.length);
-    secretVoiceCharacter = personajesConVoice[randomVoice];
-     secretLargeCharacter = personajesConPicture[randomPicture]
-     if(secretCharacter){
-     await saveDailySecret(secretCharacter.id, secretVoiceCharacter.id, secretLargeCharacter.id, secretVoiceCharacter.voice, secretLargeCharacter.image_url_large);
-    record = { date: today, GuessCharacterId: secretCharacter.id, GuessVoiceId: secretVoiceCharacter.id, GuessPictureId: secretLargeCharacter.id, Voice: secretVoiceCharacter.voice, Picture: secretLargeCharacter.image_url_large };
-     }
+    const withVoice = personajes.filter(p => p.voice && p.voice !== "None");
+    const withPicture = personajes.filter(p => p.image_url_large);
 
-    } 
-    
-     if(record){
-  
-    secretCharacter =  getPersonajeById(record.GuessCharacterId);
-    secretVoiceCharacter =  getPersonajeById(record.GuessVoiceId);
-    secretLargeCharacter =  getPersonajeById(record.GuessPictureId)
-     }
+    if (!personajes.length || !withVoice.length || !withPicture.length) {
+      console.error("No hay suficientes datos para iniciar el juego.");
+      return null;
+    }
 
-    
-if (!secretCharacter || !secretVoiceCharacter || !secretLargeCharacter ) {
-    return null; // fallback de seguridad
+    const chosen       = personajes[Math.floor(Math.random() * personajes.length)];
+    const chosenVoice  = withVoice[Math.floor(Math.random() * withVoice.length)];
+    const chosenPic    = withPicture[Math.floor(Math.random() * withPicture.length)];
+
+    await saveDailySecret(
+      chosen.id, chosenVoice.id, chosenPic.id, chosenVoice.voice, chosenPic.image_url_large
+    );
+
+    record = {
+      date: today,
+      GuessCharacterId: chosen.id,
+      GuessVoiceId: chosenVoice.id,
+      GuessPictureId: chosenPic.id,
+      Voice: chosenVoice.voice,
+      Picture: chosenPic.image_url_large,
+    };
   }
-  return secretCharacter
-    ? { id: secretCharacter.id, voiceid: secretVoiceCharacter.id, pictureId: secretLargeCharacter.id, voice: secretVoiceCharacter.voice, picture: secretLargeCharacter.image_url_large}
-    : null;
-}
+
+  // fallback para minúsculas/pascalCase
+  const guessCharacterId = (record as any).GuessCharacterId ?? (record as any).guesscharacterid;
+  const guessVoiceId     = (record as any).GuessVoiceId ?? (record as any).guessvoiceid;
+  const guessPictureId   = (record as any).GuessPictureId ?? (record as any).guesspictureid;
+
+  secretCharacter      = getPersonajeById(guessCharacterId);
+  secretVoiceCharacter = getPersonajeById(guessVoiceId);
+  secretLargeCharacter = getPersonajeById(guessPictureId);
+
+  if (!secretCharacter || !secretVoiceCharacter || !secretLargeCharacter) {
+    console.error("No se pudo hidratar el estado secreto desde el record:", record);
+    return null;
+  }
+
+  // 🔥 siempre devuelve lo mismo, con o sin record
+  return {
+  id: secretCharacter.id,
+  voiceid: secretVoiceCharacter.id,
+  pictureId: secretLargeCharacter.id,
+  voice: secretVoiceCharacter.voice,      // 🔹 usar la propiedad real
+  picture: secretLargeCharacter.image_url_large // 🔹 usar la propiedad real
+};
+};
 
 export const getPersonajeSecreto = () => secretCharacter;
 export const getPistaPersonaje= () => {
