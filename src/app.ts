@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use("/images", express.static("public/images"));
 app.use("/voices", express.static("public/voices"));
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5173','https://jjk-dle.vercel.app','https://jjk-dle.vercel.app/'];
   app.use(cors({
     origin: allowedOrigins,
     credentials: true
