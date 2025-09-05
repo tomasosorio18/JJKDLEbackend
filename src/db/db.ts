@@ -25,15 +25,9 @@ class Database {
 
     constructor() {
         this.pool = new Pool({
-            user: envVars.DB_USER,
-            host: envVars.DB_HOST,
-            database: envVars.DB_NAME,
-            password: envVars.DB_PASSWORD,
-            port: envVars.DB_PORT,
-            max: 20, // Tamaño máximo del pool
-            idleTimeoutMillis: 30000, // Tiempo de espera antes de cerrar una conexión inactiva
-            connectionTimeoutMillis: 10000, // Tiempo máximo para establecer una conexión
-        })
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false }
+})
 
         this.testConnection()
     }
