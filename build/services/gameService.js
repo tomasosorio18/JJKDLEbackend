@@ -114,16 +114,16 @@ const iniciarJuego = () => __awaiter(void 0, void 0, void 0, function* () {
     const today = getTodayKey();
     let record = yield (0, exports.getDailySecret)();
     if (!record) {
-        const randomId = Math.floor(Math.random() * 122) + 1;
-        secretCharacter = (0, personajeServices_1.getPersonajeById)(randomId);
-        const personajesConVoice = (0, personajeServices_1.getAllPersonajes)().filter(p => p.voice && p.voice !== "None");
-        const personajesConPicture = (0, personajeServices_1.getAllPersonajes)().filter(p => p.image_url_large);
-        const randomPicture = Math.floor(Math.random() * personajesConVoice.length);
+        const personajes = (0, personajeServices_1.getAllPersonajes)();
+        let secretCharacter = personajes[Math.floor(Math.random() * personajes.length)];
+        const personajesConVoice = personajes.filter(p => p.voice && p.voice !== "None");
+        const personajesConPicture = personajes.filter(p => p.image_url_large);
+        const randomPicture = Math.floor(Math.random() * personajesConPicture.length);
         const randomVoice = Math.floor(Math.random() * personajesConVoice.length);
         secretVoiceCharacter = personajesConVoice[randomVoice];
         secretLargeCharacter = personajesConPicture[randomPicture];
         if (secretCharacter) {
-            (0, exports.saveDailySecret)(secretCharacter.id, secretVoiceCharacter.id, secretLargeCharacter.id, secretVoiceCharacter.voice, secretLargeCharacter.image_url_large);
+            yield (0, exports.saveDailySecret)(secretCharacter.id, secretVoiceCharacter.id, secretLargeCharacter.id, secretVoiceCharacter.voice, secretLargeCharacter.image_url_large);
             record = { date: today, GuessCharacterId: secretCharacter.id, GuessVoiceId: secretVoiceCharacter.id, GuessPictureId: secretLargeCharacter.id, Voice: secretVoiceCharacter.voice, Picture: secretLargeCharacter.image_url_large };
         }
     }
