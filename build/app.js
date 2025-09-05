@@ -16,9 +16,23 @@ const port = process.env.PORT || 3000;
 app.use(express_1.default.json());
 app.use("/images", express_1.default.static("public/images"));
 app.use("/voices", express_1.default.static("public/voices"));
-const allowedOrigins = ['http://localhost:5173', 'https://jjk-dle.vercel.app', 'https://jjkdle-phuv0yveg-tomasosorio18s-projects.vercel.app'];
+const allowedOrigins = [
+    "http://localhost:5173",
+    "https://jjk-dle.vercel.app"
+];
 app.use((0, cors_1.default)({
-    origin: allowedOrigins,
+    origin: (origin, callback) => {
+        if (!origin)
+            return callback(null, true); // permitir requests desde Postman o backend
+        // Permitir orígenes fijos o cualquier preview de Vercel (*.vercel.app)
+        if (allowedOrigins.includes(origin) ||
+            origin.endsWith(".vercel.app")) {
+            callback(null, true);
+        }
+        else {
+            callback(new Error(`CORS not allowed for origin ${origin}`));
+        }
+    },
     credentials: true
 }));
 app.use("/api/personajes", personajes_routes_1.default);
