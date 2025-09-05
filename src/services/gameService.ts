@@ -25,51 +25,79 @@ const gradeOrder: GradeOrder[] = [
   "Special Grade"
 ];
 
-db.prepare("CREATE TABLE IF NOT EXISTS daily_secret_Character (date TEXT PRIMARY KEY, GuessCharacterId INTEGER, GuessVoiceId INTEGER,GuessPictureId INTEGER, Voice STRING, Picture STRING)").run();
+// db.prepare("CREATE TABLE IF NOT EXISTS daily_secret_Character (date TEXT PRIMARY KEY, GuessCharacterId INTEGER, GuessVoiceId INTEGER,GuessPictureId INTEGER, Voice STRING, Picture STRING)").run();
 
 const getTodayKey = () =>
   {
   const fecha = new Date().toLocaleDateString("en-CA", { timeZone: "America/Santiago" });
   return fecha;
   }
-export const getAllDailyRecords = (): DailyRecord[] => {
-  return db.prepare("SELECT * FROM daily_secret_Character").all() as DailyRecord[];
+export const getAllDailyRecords = async (): Promise <DailyRecord[]> => {
+  const client = await db.getClient();
+  try {
+   const res = await client.query("SELECT * FROM daily_secret_Character");
+   return res.rows as DailyRecord[]   
+  }finally{
+    client.release()
+  }
 }
-export const getPreviousRecord = (): ExtendedDailyRecord | null => {
-  const previous = db.prepare("SELECT * FROM daily_secret_Character ORDER BY date DESC LIMIT 1 OFFSET 1").get() as DailyRecord | null;
-  if (!previous) return null;
-  const previousPictureCharacter = getPersonajeById(previous.GuessPictureId);
-  const previousVoiceCharacter = getPersonajeById(previous.GuessVoiceId);
-  const previousCharacter = getPersonajeById(previous.GuessCharacterId);
-
-  return { 
+  export const getPreviousRecord = async (): Promise<ExtendedDailyRecord | null> => {
+  const client = await db.getClient()
+  try {
+    const res = await client.query("SELECT * FROM daily_secret_Character ORDER BY date DESC LIMIT 1 OFFSET 1");
+    const previous = res.rows[0] as DailyRecord | null;
+      if (!previous) return null;
+      const previousPictureCharacter = getPersonajeById(previous.GuessPictureId);
+      const previousVoiceCharacter = getPersonajeById(previous.GuessVoiceId);
+      const previousCharacter = getPersonajeById(previous.GuessCharacterId);
+        return { 
     ...previous, 
     CharacterName: previousCharacter?.name || "", 
     PictureCharacterName: previousPictureCharacter?.name || "", 
     VoiceCharacterName: previousVoiceCharacter?.name || "" 
   };
+  } finally {
+    client.release()
+  }
+
 }
-export const getDailySecret = (): DailyRecord | null => {
+export const getDailySecret = async (): Promise<DailyRecord | null> => {
   const today = getTodayKey()
-  return db.prepare("SELECT * FROM daily_secret_Character WHERE date = ?").get(today) as DailyRecord | null;
+  const client = await db.getClient()
+  try {
+    const res = await client.query("SELECT * FROM daily_secret_Character WHERE date = $1", [today])
+    return res.rows[0] as DailyRecord | null;
+  } finally {
+    client.release()
+  }
 }
-export const saveDailySecret = (guessCharId: number, guessVoiceId: number, guessPictureId:number, voice: string, picture: string) => {
+export const saveDailySecret = async (guessCharId: number, guessVoiceId: number, guessPictureId:number, voice: string, picture: string) => {
   const today = getTodayKey();
-  return db.prepare("INSERT INTO daily_secret_Character (date, GuessCharacterId, GuessVoiceId, GuessPictureId, Voice, Picture) VALUES (?, ?, ?, ?,?,?)").run(today, guessCharId, guessVoiceId,guessPictureId, voice, picture);
+  const client = await db.getClient();
+  try {
+    await client.query("INSERT INTO daily_secret_Character (date, GuessCharacterId, GuessVoiceId, GuessPictureId, Voice, Picture) VALUES ($1, $2, $3, $4, $5, $6)", [today, guessCharId, guessVoiceId, guessPictureId, voice, picture]);
+  } finally {
+    client.release();
+  }
 }
-export const resetDailySecret = () => {
+export const resetDailySecret = async () => {
   const today = getTodayKey();
-  db.prepare("DELETE FROM daily_secret_Character WHERE date = ?").run(today);
-  secretCharacter = undefined;
+  const client = await db.getClient();
+  try {
+    await client.query("DELETE FROM daily_secret_Character WHERE date = $1", [today]);
+      secretCharacter = undefined;
   secretVoiceCharacter = undefined;
   secretLargeCharacter = undefined;
+  } finally {
+    client.release();
+  }
 };
 let secretCharacter: Personaje | undefined;
 let secretVoiceCharacter: Personaje | undefined;
 let secretLargeCharacter : Personaje | undefined;
-export const iniciarJuego = (): { id: number; voiceid: number; pictureId:number, voice: string, picture:string } | null => {
+export const iniciarJuego = async (): Promise<{ id: number; voiceid: number; pictureId: number; voice: string; picture: string; } | null> => {
     const today = getTodayKey();
-    let record: DailyRecord | null = getDailySecret();
+    let record: DailyRecord | null = await getDailySecret();
     if (!record) {
       const randomId = Math.floor(Math.random() * 122) + 1;
       secretCharacter = getPersonajeById(randomId);

@@ -1,12 +1,12 @@
 {
   "name": "backend_dle",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev src/app.ts",
     "lint": "ts-standard",
-    "start": "node build/index.js",
+    "start": "node build/app.js",
     "tsc": "tsc"
   },
   "author": "",
@@ -17,13 +17,16 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "dotenv-expand": "^12.0.2",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "pg": "^8.16.3"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/node": "^24.1.0",
+    "@types/pg": "^8.15.5",
     "eslint": "^9.32.0",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",

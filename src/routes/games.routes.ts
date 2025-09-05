@@ -4,37 +4,37 @@ import * as personajeService from "../services/personajeServices";
 
 const router = express.Router();
 
-router.get("/start", (req, res) => {
-    const secret = gameService.iniciarJuego();
+router.get("/start", async (req, res) => {
+    const secret = await gameService.iniciarJuego();
     console.log("Juego iniciado con personaje secreto:", secret);
     res.send({ success: true, mensaje: "Juego iniciado", personajeId: secret?.id, voiceId: secret?.voiceid, pictureId:secret?.pictureId, voice: secret?.voice, picture: secret?.picture});
 });
 
-router.get("/secret", (req, res) => {
-    const personajeSecreto = gameService.getDailySecret();
+router.get("/secret", async (req, res) => {
+    const personajeSecreto = await gameService.getDailySecret();
     if (personajeSecreto) {
         res.send({ success: true, personaje: personajeSecreto });
     } else {
         res.status(404).send({ success: false, mensaje: "Personaje secreto no encontrado" });
     }
 });
-router.get("/previousRecords", (req, res) => {
-  const records = gameService.getPreviousRecord();
+router.get("/previousRecords", async (req, res) => {
+  const records =  await gameService.getPreviousRecord();
   res.send({ success: true, records });
 });
 
-router.get("/dailyRecords", (req, res) => {
-  const records = gameService.getAllDailyRecords();
+router.get("/dailyRecords", async (req, res) => {
+  const records =  await gameService.getAllDailyRecords();
   res.send({ success: true, records });
 });
-router.get("/reset", (req,res) => {
-  gameService.resetDailySecret()
+router.get("/reset", async (req,res) => {
+  await gameService.resetDailySecret()
   res.send({success: true, mensaje:"partida reseteada para hoy"})
 })
 router.post("/guess", (req, res) => {
     const {id} = req.body;
     console.log("ID recibido:", id);
-    const personaje = personajeService.getPersonajeById(id);
+    const personaje =  personajeService.getPersonajeById(id);
     console.log("Personaje encontrado:", personaje);
     if (!personaje) {
         return res.status(404).send({ success: false, mensaje: "Personaje no encontrado" });
@@ -49,7 +49,7 @@ router.post("/guess", (req, res) => {
 })
 router.post("/guessVoice", (req,res) =>{
   const {id} = req.body;
-  const personaje = personajeService.getPersonajeVoiceById(id);
+  const personaje =  personajeService.getPersonajeVoiceById(id);
   if (!personaje) {
       return res.status(404).send({ success: false, mensaje: "Personaje no encontrado" });
   }
@@ -63,7 +63,7 @@ router.post("/guessVoice", (req,res) =>{
     console.log("Resultado de la comparación:", result);
     res.send({ success: true, resultado: result, hasWon });
 })
-router.post("/guessPicture", (req,res)=> {
+router.post("/guessPicture", async (req,res)=> {
   const {id} = req.body;
   const personaje = personajeService.getPersonajePictureById(id)
   console.log("personaje con picture", personaje)
