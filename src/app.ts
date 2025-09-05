@@ -18,7 +18,7 @@ const allowedOrigins = ['http://localhost:5173'];
     credentials: true
   }));
 
-console.log('DATABASE_URL:', process.env.DATABASE_URL?.slice(0, 30) + '...'); 
+
 app.use("/api/personajes", personajesRoutes);
 app.use("/game", gameRoutes)
 

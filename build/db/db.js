@@ -14,33 +14,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const pg_1 = require("pg");
 const dotenv_1 = __importDefault(require("dotenv"));
-const joi_1 = __importDefault(require("joi"));
 // Cargar variables de entorno
 dotenv_1.default.config();
-// Aca se validan las variables de entorno
-const envSchema = joi_1.default.object({
-    DB_USER: joi_1.default.string().required(),
-    DB_HOST: joi_1.default.string().required(),
-    DB_NAME: joi_1.default.string().required(),
-    DB_PASSWORD: joi_1.default.string().required(),
-    DB_PORT: joi_1.default.number().default(5432),
-}).unknown();
-const { error, value: envVars } = envSchema.validate(process.env);
-if (error) {
-    console.error("Error en las variables de entorno:", error.message);
-    process.exit(1);
-}
 class Database {
     constructor() {
         this.pool = new pg_1.Pool({
-            user: envVars.DB_USER,
-            host: envVars.DB_HOST,
-            database: envVars.DB_NAME,
-            password: envVars.DB_PASSWORD,
-            port: envVars.DB_PORT,
-            max: 20, // Tamaño máximo del pool
-            idleTimeoutMillis: 30000, // Tiempo de espera antes de cerrar una conexión inactiva
-            connectionTimeoutMillis: 10000, // Tiempo máximo para establecer una conexión
+            connectionString: process.env.DATABASE_URL,
+            ssl: { rejectUnauthorized: false }
         });
         this.testConnection();
     }
