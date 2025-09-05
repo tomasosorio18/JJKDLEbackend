@@ -19,9 +19,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Masamichi_Yaga_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Masamichi_Yaga_292.png",
-      "image_url_large": "http://localhost:3000/images/personajes/Masamichi_Yaga_29_large.webp",
+      "image_url": "/images/personajes/Masamichi_Yaga_29.webp",
+      "profile_url": "/images/personajes/Masamichi_Yaga_292.png",
+      "image_url_large": "/images/personajes/Masamichi_Yaga_29_large.webp",
       "voice": "None",
       "group": "Jujutsu High Tokyo"
     },
@@ -44,10 +44,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Eso_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Eso_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Eso_292.png",
-      "voice": "http://localhost:3000/voices/personajes/esovoice.mp3",
+      "image_url": "/images/personajes/Eso_29.webp",
+      "image_url_large": "/images/personajes/Eso_29_large.jpg",
+      "profile_url": "/images/personajes/Eso_292.png",
+      "voice": "/voices/personajes/esovoice.mp3",
       "group": "Death Painting Wombs"
     },
     {
@@ -69,10 +69,10 @@
         "has_domain": false,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Choso_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Choso_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Choso_292.png",
-      "voice": "http://localhost:3000/voices/personajes/chosovoice.mp3",
+      "image_url": "/images/personajes/Choso_29.webp",
+      "image_url_large": "/images/personajes/Choso_29_large.webp",
+      "profile_url": "/images/personajes/Choso_292.png",
+      "voice": "/voices/personajes/chosovoice.mp3",
       "group": "Death Painting Wombs"
     },
     {
@@ -94,9 +94,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Ko-Guy_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Ko-Guy_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Ko-Guy_292.png",
+      "image_url": "/images/personajes/Ko-Guy_29.webp",
+      "image_url_large": "/images/personajes/Ko-Guy_29_large.jpg",
+      "profile_url": "/images/personajes/Ko-Guy_292.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -119,9 +119,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Fly_Heads_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Fly_Heads_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Fly_Heads_292.png",
+      "image_url": "/images/personajes/Fly_Heads_29.webp",
+      "image_url_large": "/images/personajes/Fly_Heads_29_large.webp",
+      "profile_url": "/images/personajes/Fly_Heads_292.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -144,9 +144,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kechizu_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Kechizu_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kechizu_292.png",
+      "image_url": "/images/personajes/Kechizu_29.webp",
+      "image_url_large": "/images/personajes/Kechizu_29_large.webp",
+      "profile_url": "/images/personajes/Kechizu_292.png",
       "voice": "None",
       "group": "Death Painting Wombs"
     },
@@ -169,9 +169,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Finger_Bearer_full_body_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Finger_Bearer_full_body_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Finger_Bearer_full_body_292.png",
+      "image_url": "/images/personajes/Finger_Bearer_full_body_29.webp",
+      "image_url_large": "/images/personajes/Finger_Bearer_full_body_29_large.webp",
+      "profile_url": "/images/personajes/Finger_Bearer_full_body_292.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -194,10 +194,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Toji_Fushiguro_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Toji_Fushiguro_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Toji_Fushiguro_292.png",
-      "voice": "http://localhost:3000/voices/personajes/tojivoice.mp3",
+      "image_url": "/images/personajes/Toji_Fushiguro_29.webp",
+      "image_url_large": "/images/personajes/Toji_Fushiguro_29_large.jpg",
+      "profile_url": "/images/personajes/Toji_Fushiguro_292.png",
+      "voice": "/voices/personajes/tojivoice.mp3",
       "group": "Independent"
     },
     {
@@ -219,8 +219,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Asian_God_Curse.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Asian_God_Curse2.png",
+      "image_url": "/images/personajes/Asian_God_Curse.webp",
+      "profile_url": "/images/personajes/Asian_God_Curse2.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -239,8 +239,8 @@
         "description": "A high-ranking American military officer with unknown combat abilities.",
         "innate_technique": "Unknown"
       },
-      "image_url": "http://localhost:3000/images/personajes/Garry_K._Johnson.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Garry_K._Johnson2.png",
+      "image_url": "/images/personajes/Garry_K._Johnson.webp",
+      "profile_url": "/images/personajes/Garry_K._Johnson2.png",
       "voice": "None",
       "group": "U.S. Military"
     },
@@ -259,9 +259,9 @@
         "description": "A special grade curse that infects and entraps opponents using disease-based techniques.",
         "innate_technique": "Disease Domain"
       },
-      "image_url": "http://localhost:3000/images/personajes/Smallpox_Deity.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Smallpox_Deity_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Smallpox_Deity2.png",
+      "image_url": "/images/personajes/Smallpox_Deity.webp",
+      "image_url_large": "/images/personajes/Smallpox_Deity_large.jpg",
+      "profile_url": "/images/personajes/Smallpox_Deity2.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -284,9 +284,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Rika_Orimoto_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Rika_Orimoto_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Rika_Orimoto_292.png",
+      "image_url": "/images/personajes/Rika_Orimoto_29.webp",
+      "image_url_large": "/images/personajes/Rika_Orimoto_29_large.webp",
+      "profile_url": "/images/personajes/Rika_Orimoto_292.png",
       "voice": "None",
       "group": "Special Grade Cursed Spirits"
     },
@@ -309,8 +309,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kurourushi.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kurourushi2.png",
+      "image_url": "/images/personajes/Kurourushi.webp",
+      "profile_url": "/images/personajes/Kurourushi2.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -333,9 +333,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kuchisake-Onna_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Kuchisake-Onna_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kuchisake-Onna_292.png",
+      "image_url": "/images/personajes/Kuchisake-Onna_29.webp",
+      "image_url_large": "/images/personajes/Kuchisake-Onna_29_large.webp",
+      "profile_url": "/images/personajes/Kuchisake-Onna_292.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -358,9 +358,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Tamamo-no-Mae_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Tamamo-no-Mae_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Tamamo-no-Mae_292.png",
+      "image_url": "/images/personajes/Tamamo-no-Mae_29.webp",
+      "image_url_large": "/images/personajes/Tamamo-no-Mae_29_large.webp",
+      "profile_url": "/images/personajes/Tamamo-no-Mae_292.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -383,8 +383,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Cyrus_Veil.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Cyrus_Veil2.png",
+      "image_url": "/images/personajes/Cyrus_Veil.webp",
+      "profile_url": "/images/personajes/Cyrus_Veil2.png",
       "voice": "None",
       "group": "U.S. Government"
     },
@@ -407,8 +407,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Keita_Oe.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Keita_Oe2.png",
+      "image_url": "/images/personajes/Keita_Oe.webp",
+      "profile_url": "/images/personajes/Keita_Oe2.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -431,8 +431,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Jin_Itadori.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Jin_Itadori2.png",
+      "image_url": "/images/personajes/Jin_Itadori.webp",
+      "profile_url": "/images/personajes/Jin_Itadori2.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -455,8 +455,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Adult_Saori.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Adult_Saori2.png",
+      "image_url": "/images/personajes/Adult_Saori.webp",
+      "profile_url": "/images/personajes/Adult_Saori2.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -479,8 +479,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Takeda_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Takeda_292.png",
+      "image_url": "/images/personajes/Takeda_29.webp",
+      "profile_url": "/images/personajes/Takeda_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -503,8 +503,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Taichi_Kanada_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Taichi_Kanada_292.png",
+      "image_url": "/images/personajes/Taichi_Kanada_29.webp",
+      "profile_url": "/images/personajes/Taichi_Kanada_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -527,8 +527,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Sotomura_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Sotomura_292.png",
+      "image_url": "/images/personajes/Sotomura_29.webp",
+      "profile_url": "/images/personajes/Sotomura_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -551,8 +551,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Furudate.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Furudate2.png",
+      "image_url": "/images/personajes/Furudate.webp",
+      "profile_url": "/images/personajes/Furudate2.png",
       "voice": "None",
       "group": "Zenin Clan"
     },
@@ -575,8 +575,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Tadashi_Okazaki_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Tadashi_Okazaki_292.png",
+      "image_url": "/images/personajes/Tadashi_Okazaki_29.webp",
+      "profile_url": "/images/personajes/Tadashi_Okazaki_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -599,9 +599,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Nagi_Yoshino_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Nagi_Yoshino_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Nagi_Yoshino_292.png",
+      "image_url": "/images/personajes/Nagi_Yoshino_29.webp",
+      "image_url_large": "/images/personajes/Nagi_Yoshino_29_large.webp",
+      "profile_url": "/images/personajes/Nagi_Yoshino_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -624,9 +624,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Tsumiki_Fushiguro_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Tsumiki_Fushiguro_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Tsumiki_Fushiguro_292.png",
+      "image_url": "/images/personajes/Tsumiki_Fushiguro_29.webp",
+      "image_url_large": "/images/personajes/Tsumiki_Fushiguro_29_large.webp",
+      "profile_url": "/images/personajes/Tsumiki_Fushiguro_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -649,8 +649,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Shota_Ito_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Shota_Ito_292.png",
+      "image_url": "/images/personajes/Shota_Ito_29.webp",
+      "profile_url": "/images/personajes/Shota_Ito_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -673,8 +673,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Takagi_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Takagi_292.png",
+      "image_url": "/images/personajes/Takagi_29.webp",
+      "profile_url": "/images/personajes/Takagi_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -697,9 +697,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Fumi.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Fumi_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Fumi2.png",
+      "image_url": "/images/personajes/Fumi.webp",
+      "image_url_large": "/images/personajes/Fumi_large.webp",
+      "profile_url": "/images/personajes/Fumi2.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -722,9 +722,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Takada_Anime.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Takada_Anime_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Takada_Anime2.png",
+      "image_url": "/images/personajes/Takada_Anime.webp",
+      "image_url_large": "/images/personajes/Takada_Anime_large.webp",
+      "profile_url": "/images/personajes/Takada_Anime2.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -747,9 +747,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Wasuke_Itadori_Anime.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Wasuke_Itadori_Anime_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Wasuke_Itadori_Anime2.png",
+      "image_url": "/images/personajes/Wasuke_Itadori_Anime.webp",
+      "image_url_large": "/images/personajes/Wasuke_Itadori_Anime_large.webp",
+      "profile_url": "/images/personajes/Wasuke_Itadori_Anime2.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -772,9 +772,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Yuko_Ozawa_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Yuko_Ozawa_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Yuko_Ozawa_292.png",
+      "image_url": "/images/personajes/Yuko_Ozawa_29.webp",
+      "image_url_large": "/images/personajes/Yuko_Ozawa_29_large.webp",
+      "profile_url": "/images/personajes/Yuko_Ozawa_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -797,8 +797,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Awasaka_cursing_people.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Awasaka_cursing_people2.webp",
+      "image_url": "/images/personajes/Awasaka_cursing_people.webp",
+      "profile_url": "/images/personajes/Awasaka_cursing_people2.webp",
       "voice": "None",
       "group": "Curse Users"
     },
@@ -821,8 +821,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Shigeru_Sonoda_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Shigeru_Sonoda_292.png",
+      "image_url": "/images/personajes/Shigeru_Sonoda_29.webp",
+      "profile_url": "/images/personajes/Shigeru_Sonoda_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -845,9 +845,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Iguchi_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Iguchi_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Iguchi_292.png",
+      "image_url": "/images/personajes/Iguchi_29.webp",
+      "image_url_large": "/images/personajes/Iguchi_29_large.webp",
+      "profile_url": "/images/personajes/Iguchi_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -870,9 +870,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Sasaki_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Sasaki_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Sasaki_292.png",
+      "image_url": "/images/personajes/Sasaki_29.webp",
+      "image_url_large": "/images/personajes/Sasaki_29_large.jpg",
+      "profile_url": "/images/personajes/Sasaki_292.png",
       "voice": "None",
       "group": "Civilians"
     },
@@ -895,9 +895,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Shiu_Kong_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Shiu_Kong_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Shiu_Kong_292.png",
+      "image_url": "/images/personajes/Shiu_Kong_29.webp",
+      "image_url_large": "/images/personajes/Shiu_Kong_29_large.jpg",
+      "profile_url": "/images/personajes/Shiu_Kong_292.png",
       "voice": "None",
       "group": "Independent"
     },
@@ -920,9 +920,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Noritoshi_Kamo_ancestor_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Noritoshi_Kamo_ancestor_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Noritoshi_Kamo_ancestor_292.png",
+      "image_url": "/images/personajes/Noritoshi_Kamo_ancestor_29.webp",
+      "image_url_large": "/images/personajes/Noritoshi_Kamo_ancestor_29_large.webp",
+      "profile_url": "/images/personajes/Noritoshi_Kamo_ancestor_292.png",
       "voice": "None",
       "group": "Kamo Clan"
     },
@@ -945,9 +945,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Junpei_Yoshino_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Junpei_Yoshino_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Junpei_Yoshino_292.png",
+      "image_url": "/images/personajes/Junpei_Yoshino_29.webp",
+      "image_url_large": "/images/personajes/Junpei_Yoshino_29_large.webp",
+      "profile_url": "/images/personajes/Junpei_Yoshino_292.png",
       "voice": "None",
       "group": "Curse Users"
     },
@@ -970,8 +970,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kokun_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kokun_292.png",
+      "image_url": "/images/personajes/Kokun_29.webp",
+      "profile_url": "/images/personajes/Kokun_292.png",
       "voice": "None",
       "group": "Q"
     },
@@ -994,9 +994,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Ogami.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Ogami_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Ogami2.png",
+      "image_url": "/images/personajes/Ogami.webp",
+      "image_url_large": "/images/personajes/Ogami_large.jpg",
+      "profile_url": "/images/personajes/Ogami2.png",
       "voice": "None",
       "group": "Curse Users"
     },
@@ -1019,8 +1019,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Bayer_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Bayer_292.png",
+      "image_url": "/images/personajes/Bayer_29.webp",
+      "profile_url": "/images/personajes/Bayer_292.png",
       "voice": "None",
       "group": "Q"
     },
@@ -1043,9 +1043,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Niji_Ebina_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Niji_Ebina_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Niji_Ebina_292.png",
+      "image_url": "/images/personajes/Niji_Ebina_29.webp",
+      "image_url_large": "/images/personajes/Niji_Ebina_29_large.webp",
+      "profile_url": "/images/personajes/Niji_Ebina_292.png",
       "voice": "None",
       "group": "Curse Users"
     },
@@ -1068,9 +1068,9 @@
         "has_domain": false,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Uraume_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Uraume_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Uraume_292.png",
+      "image_url": "/images/personajes/Uraume_29.webp",
+      "image_url_large": "/images/personajes/Uraume_29_large.webp",
+      "profile_url": "/images/personajes/Uraume_292.png",
       "voice": "None",
       "group": "Independent"
     },
@@ -1093,9 +1093,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Juzo_Kumiya_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Juzo_Kumiya_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Juzo_Kumiya_292.png",
+      "image_url": "/images/personajes/Juzo_Kumiya_29.webp",
+      "image_url_large": "/images/personajes/Juzo_Kumiya_29_large.webp",
+      "profile_url": "/images/personajes/Juzo_Kumiya_292.png",
       "voice": "None",
       "group": "Curse Users"
     },
@@ -1118,9 +1118,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Haruta_Shigemo_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Haruta_Shigemo_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Haruta_Shigemo_292.png",
+      "image_url": "/images/personajes/Haruta_Shigemo_29.webp",
+      "image_url_large": "/images/personajes/Haruta_Shigemo_29_large.webp",
+      "profile_url": "/images/personajes/Haruta_Shigemo_292.png",
       "voice": "None",
       "group": "Curse Users"
     },
@@ -1143,9 +1143,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Jiro_Awasaka.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Jiro_Awasaka_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Jiro_Awasaka2.png",
+      "image_url": "/images/personajes/Jiro_Awasaka.webp",
+      "image_url_large": "/images/personajes/Jiro_Awasaka_large.webp",
+      "profile_url": "/images/personajes/Jiro_Awasaka2.png",
       "voice": "None",
       "group": "Curse Users"
     },
@@ -1168,9 +1168,9 @@
         "has_domain": true,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Kenjaku_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Kenjaku_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kenjaku_292.png",
+      "image_url": "/images/personajes/Kenjaku_29.webp",
+      "image_url_large": "/images/personajes/Kenjaku_29_large.webp",
+      "profile_url": "/images/personajes/Kenjaku_292.png",
       "voice": "None",
       "group": "Independent"
     },
@@ -1193,9 +1193,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Manami_Suda_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Manami_Suda_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Manami_Suda_292.png",
+      "image_url": "/images/personajes/Manami_Suda_29.webp",
+      "image_url_large": "/images/personajes/Manami_Suda_29_large.webp",
+      "profile_url": "/images/personajes/Manami_Suda_292.png",
       "voice": "None",
       "group": "Geto's Faction"
     },
@@ -1218,9 +1218,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Toshihisa_Negi_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Toshihisa_Negi_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Toshihisa_Negi_292.png",
+      "image_url": "/images/personajes/Toshihisa_Negi_29.webp",
+      "image_url_large": "/images/personajes/Toshihisa_Negi_29_large.jpg",
+      "profile_url": "/images/personajes/Toshihisa_Negi_292.png",
       "voice": "None",
       "group": "Geto's Faction"
     },
@@ -1243,9 +1243,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Miguel_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Miguel_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Miguel_292.png",
+      "image_url": "/images/personajes/Miguel_29.webp",
+      "image_url_large": "/images/personajes/Miguel_29_large.webp",
+      "profile_url": "/images/personajes/Miguel_292.png",
       "voice": "None",
       "group": "Independent"
     },
@@ -1268,9 +1268,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Mimiko_Hasaba_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Mimiko_Hasaba_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Mimiko_Hasaba_292.png",
+      "image_url": "/images/personajes/Mimiko_Hasaba_29.webp",
+      "image_url_large": "/images/personajes/Mimiko_Hasaba_29_large.webp",
+      "profile_url": "/images/personajes/Mimiko_Hasaba_292.png",
       "voice": "None",
       "group": "Geto's Faction"
     },
@@ -1293,9 +1293,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Nanako_Hasaba_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Nanako_Hasaba_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Nanako_Hasaba_292.png",
+      "image_url": "/images/personajes/Nanako_Hasaba_29.webp",
+      "image_url_large": "/images/personajes/Nanako_Hasaba_29_large.jpg",
+      "profile_url": "/images/personajes/Nanako_Hasaba_292.png",
       "voice": "None",
       "group": "Geto's Faction"
     },
@@ -1318,9 +1318,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Larue_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Larue_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Larue_292.png",
+      "image_url": "/images/personajes/Larue_29.webp",
+      "image_url_large": "/images/personajes/Larue_29_large.webp",
+      "profile_url": "/images/personajes/Larue_292.png",
       "voice": "None",
       "group": "Geto's Faction"
     },
@@ -1343,9 +1343,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Rika.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Rika_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Rika2.png",
+      "image_url": "/images/personajes/Rika.webp",
+      "image_url_large": "/images/personajes/Rika_large.webp",
+      "profile_url": "/images/personajes/Rika2.png",
       "voice": "None",
       "group": "Cursed Spirits"
     },
@@ -1368,10 +1368,10 @@
         "has_domain": true,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Dagon_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Dagon_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Dagon_292.png",
-      "voice": "http://localhost:3000/voices/personajes/dagonvoice.mp3",
+      "image_url": "/images/personajes/Dagon_29.webp",
+      "image_url_large": "/images/personajes/Dagon_29_large.jpg",
+      "profile_url": "/images/personajes/Dagon_292.png",
+      "voice": "/voices/personajes/dagonvoice.mp3",
       "group": "Disaster Curses"
     },
     {
@@ -1393,9 +1393,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Ui_Ui_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Ui_Ui_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Ui_Ui_292.png",
+      "image_url": "/images/personajes/Ui_Ui_29.webp",
+      "image_url_large": "/images/personajes/Ui_Ui_29_large.webp",
+      "profile_url": "/images/personajes/Ui_Ui_292.png",
       "voice": "None",
       "group": "Independent"
     },
@@ -1418,8 +1418,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Rokujushi_Miyo.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Rokujushi_Miyo2.png",
+      "image_url": "/images/personajes/Rokujushi_Miyo.webp",
+      "profile_url": "/images/personajes/Rokujushi_Miyo2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1442,8 +1442,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Hagane_Daido.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Hagane_Daido2.png",
+      "image_url": "/images/personajes/Hagane_Daido.webp",
+      "profile_url": "/images/personajes/Hagane_Daido2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1466,10 +1466,10 @@
         "has_domain": true,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Hanami_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Hanami_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Hanami_292.png",
-      "voice": "http://localhost:3000/voices/personajes/hanamivoice.mp3",
+      "image_url": "/images/personajes/Hanami_29.webp",
+      "image_url_large": "/images/personajes/Hanami_29_large.webp",
+      "profile_url": "/images/personajes/Hanami_292.png",
+      "voice": "/voices/personajes/hanamivoice.mp3",
       "group": "Disaster Curses"
     },
     {
@@ -1491,10 +1491,10 @@
         "has_domain": true,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Jogo_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Jogo_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Jogo_292.png",
-      "voice": "http://localhost:3000/voices/personajes/jogovoice.mp3",
+      "image_url": "/images/personajes/Jogo_29.webp",
+      "image_url_large": "/images/personajes/Jogo_29_large.jpg",
+      "profile_url": "/images/personajes/Jogo_292.png",
+      "voice": "/voices/personajes/jogovoice.mp3",
       "group": "Disaster Curses"
     },
     {
@@ -1516,9 +1516,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Riko_Amanai_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Riko_Amanai_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Riko_Amanai_292.png",
+      "image_url": "/images/personajes/Riko_Amanai_29.webp",
+      "image_url_large": "/images/personajes/Riko_Amanai_29_large.webp",
+      "profile_url": "/images/personajes/Riko_Amanai_292.png",
       "voice": "None",
       "group": "None"
     },
@@ -1541,10 +1541,10 @@
         "has_domain": true,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Mahito_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Mahito_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Mahito_292.png",
-      "voice": "http://localhost:3000/voices/personajes/mahitovoice.mp3",
+      "image_url": "/images/personajes/Mahito_29.webp",
+      "image_url_large": "/images/personajes/Mahito_29_large.webp",
+      "profile_url": "/images/personajes/Mahito_292.png",
+      "voice": "/voices/personajes/mahitovoice.mp3",
       "group": "Disaster Curses"
     },
     {
@@ -1564,9 +1564,9 @@
         "description": "Skilled caretaker, no combat abilities.",
         "domain": "None"
       },
-      "image_url": "http://localhost:3000/images/personajes/Misato_Kuroi_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Misato_Kuroi_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Misato_Kuroi_292.png",
+      "image_url": "/images/personajes/Misato_Kuroi_29.webp",
+      "image_url_large": "/images/personajes/Misato_Kuroi_29_large.webp",
+      "profile_url": "/images/personajes/Misato_Kuroi_292.png",
       "voice": "None",
       "group": "Star Religious Group"
     },
@@ -1589,8 +1589,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Charles_Bernard.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Charles_Bernard2.png",
+      "image_url": "/images/personajes/Charles_Bernard.webp",
+      "profile_url": "/images/personajes/Charles_Bernard2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1613,8 +1613,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Dhruv_Lakdawalla.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Dhruv_Lakdawalla2.png",
+      "image_url": "/images/personajes/Dhruv_Lakdawalla.webp",
+      "profile_url": "/images/personajes/Dhruv_Lakdawalla2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1637,8 +1637,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Remi.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Remi2.png",
+      "image_url": "/images/personajes/Remi.webp",
+      "profile_url": "/images/personajes/Remi2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1661,8 +1661,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Reggie_Star.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Reggie_Star2.png",
+      "image_url": "/images/personajes/Reggie_Star.webp",
+      "profile_url": "/images/personajes/Reggie_Star2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1685,8 +1685,8 @@
         "has_domain": true,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Takako_Uro.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Takako_Uro2.png",
+      "image_url": "/images/personajes/Takako_Uro.webp",
+      "profile_url": "/images/personajes/Takako_Uro2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1709,8 +1709,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Chizuru_Hari.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Chizuru_Hari2.png",
+      "image_url": "/images/personajes/Chizuru_Hari.webp",
+      "profile_url": "/images/personajes/Chizuru_Hari2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1733,8 +1733,8 @@
         "has_domain": true,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Ryu_Ishigori_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Ryu_Ishigori_292.png",
+      "image_url": "/images/personajes/Ryu_Ishigori_29.webp",
+      "profile_url": "/images/personajes/Ryu_Ishigori_292.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1757,8 +1757,8 @@
         "has_domain": false,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Iori_Hazenoki.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Iori_Hazenoki2.png",
+      "image_url": "/images/personajes/Iori_Hazenoki.webp",
+      "profile_url": "/images/personajes/Iori_Hazenoki2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1781,8 +1781,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Yorozu.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Yorozu2.png",
+      "image_url": "/images/personajes/Yorozu.webp",
+      "profile_url": "/images/personajes/Yorozu2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1803,8 +1803,8 @@
         "description": "No combat abilities. Used as pawn by Hanyu.",
         "domain": "None"
       },
-      "image_url": "http://localhost:3000/images/personajes/Rin_Amai.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Rin_Amai2.png",
+      "image_url": "/images/personajes/Rin_Amai.webp",
+      "profile_url": "/images/personajes/Rin_Amai2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1827,9 +1827,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Hana_Kurusu_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Hana_Kurusu_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Hana_Kurusu_292.png",
+      "image_url": "/images/personajes/Hana_Kurusu_29.webp",
+      "image_url_large": "/images/personajes/Hana_Kurusu_29_large.jpg",
+      "profile_url": "/images/personajes/Hana_Kurusu_292.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1852,8 +1852,8 @@
         "has_domain": true,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Hiromi_Higuruma.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Hiromi_Higuruma2.png",
+      "image_url": "/images/personajes/Hiromi_Higuruma.webp",
+      "profile_url": "/images/personajes/Hiromi_Higuruma2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1876,8 +1876,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Fumihiko_Takaba_injured.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Fumihiko_Takaba_injured2.png",
+      "image_url": "/images/personajes/Fumihiko_Takaba_injured.webp",
+      "profile_url": "/images/personajes/Fumihiko_Takaba_injured2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1900,8 +1900,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Hajime_Kashimo_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Hajime_Kashimo_292.png",
+      "image_url": "/images/personajes/Hajime_Kashimo_29.webp",
+      "profile_url": "/images/personajes/Hajime_Kashimo_292.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1924,8 +1924,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Hanyu.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Hanyu2.png",
+      "image_url": "/images/personajes/Hanyu.webp",
+      "profile_url": "/images/personajes/Hanyu2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1948,8 +1948,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Haba.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Haba2.png",
+      "image_url": "/images/personajes/Haba.webp",
+      "profile_url": "/images/personajes/Haba2.png",
       "voice": "None",
       "group": "Culling Game Player"
     },
@@ -1972,8 +1972,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Nobuaki_Zenin.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Nobuaki_Zenin2.png",
+      "image_url": "/images/personajes/Nobuaki_Zenin.webp",
+      "profile_url": "/images/personajes/Nobuaki_Zenin2.png",
       "voice": "None",
       "group": "Zenin Clan"
     },
@@ -1996,8 +1996,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Jinichi_Zenin.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Jinichi_Zenin2.png",
+      "image_url": "/images/personajes/Jinichi_Zenin.webp",
+      "profile_url": "/images/personajes/Jinichi_Zenin2.png",
       "voice": "None",
       "group": "Zenin Clan"
     },
@@ -2020,10 +2020,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Naobito_Zenin_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Naobito_Zenin_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Naobito_Zenin_292.png",
-      "voice": "http://localhost:3000/voices/personajes/naobitovoice.mp3",
+      "image_url": "/images/personajes/Naobito_Zenin_29.webp",
+      "image_url_large": "/images/personajes/Naobito_Zenin_29_large.webp",
+      "profile_url": "/images/personajes/Naobito_Zenin_292.png",
+      "voice": "/voices/personajes/naobitovoice.mp3",
       "group": "Zenin Clan"
     },
     {
@@ -2045,8 +2045,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Ogi_Zenin.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Ogi_Zenin2.png",
+      "image_url": "/images/personajes/Ogi_Zenin.webp",
+      "profile_url": "/images/personajes/Ogi_Zenin2.png",
       "voice": "None",
       "group": "Zenin Clan"
     },
@@ -2069,8 +2069,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Ranta_Zenin.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Ranta_Zenin2.png",
+      "image_url": "/images/personajes/Ranta_Zenin.webp",
+      "profile_url": "/images/personajes/Ranta_Zenin2.png",
       "voice": "None",
       "group": "Zenin Clan"
     },
@@ -2093,8 +2093,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Chojuro_Zenin.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Chojuro_Zenin2.png",
+      "image_url": "/images/personajes/Chojuro_Zenin.webp",
+      "profile_url": "/images/personajes/Chojuro_Zenin2.png",
       "voice": "None",
       "group": "Zenin Clan"
     },
@@ -2117,9 +2117,9 @@
         "has_domain": true,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Naoya_Zenin_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Naoya_Zenin_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Naoya_Zenin_292.png",
+      "image_url": "/images/personajes/Naoya_Zenin_29.webp",
+      "image_url_large": "/images/personajes/Naoya_Zenin_29_large.jpg",
+      "profile_url": "/images/personajes/Naoya_Zenin_292.png",
       "voice": "None",
       "group": "Zenin Clan"
     },
@@ -2142,10 +2142,10 @@
         "has_domain": true,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Sukuna_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Sukuna_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Sukuna_292.png",
-      "voice": "http://localhost:3000/voices/personajes/sukunavoice.mp3",
+      "image_url": "/images/personajes/Sukuna_29.webp",
+      "image_url_large": "/images/personajes/Sukuna_29_large.webp",
+      "profile_url": "/images/personajes/Sukuna_292.png",
+      "voice": "/voices/personajes/sukunavoice.mp3",
       "group": "Independent"
     },
     {
@@ -2167,10 +2167,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Momo_Nishimiya_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Momo_Nishimiya_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Momo_Nishimiya_292.png",
-      "voice": "http://localhost:3000/voices/personajes/momovoice.mp3",
+      "image_url": "/images/personajes/Momo_Nishimiya_29.webp",
+      "image_url_large": "/images/personajes/Momo_Nishimiya_29_large.webp",
+      "profile_url": "/images/personajes/Momo_Nishimiya_292.png",
+      "voice": "/voices/personajes/momovoice.mp3",
       "group": "Jujutsu High Kyoto"
     },
     {
@@ -2192,10 +2192,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Noritoshi_Kamo_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Noritoshi_Kamo_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Noritoshi_Kamo_292.png",
-      "voice": "http://localhost:3000/voices/personajes/kamovoice.mp3",
+      "image_url": "/images/personajes/Noritoshi_Kamo_29.webp",
+      "image_url_large": "/images/personajes/Noritoshi_Kamo_29_large.jpg",
+      "profile_url": "/images/personajes/Noritoshi_Kamo_292.png",
+      "voice": "/voices/personajes/kamovoice.mp3",
       "group": "Jujutsu High Kyoto"
     },
     {
@@ -2217,9 +2217,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Takuma_Ino_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Takuma_Ino_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Takuma_Ino_292.png",
+      "image_url": "/images/personajes/Takuma_Ino_29.webp",
+      "image_url_large": "/images/personajes/Takuma_Ino_29_large.webp",
+      "profile_url": "/images/personajes/Takuma_Ino_292.png",
       "voice": "None",
       "group": "Jujutsu High Tokyo"
     },
@@ -2242,8 +2242,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Tengen_first_appearance.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Tengen_first_appearance2.png",
+      "image_url": "/images/personajes/Tengen_first_appearance.webp",
+      "profile_url": "/images/personajes/Tengen_first_appearance2.png",
       "voice": "None",
       "group": "Jujutsu Society"
     },
@@ -2266,10 +2266,10 @@
         "has_domain": false,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Yuki_Tsukumo_(Volume_23).webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Yuki_Tsukumo_(Volume_23)_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Yuki_Tsukumo_(Volume_23)2.png",
-      "voice": "http://localhost:3000/voices/personajes/yukivoice.mp3",
+      "image_url": "/images/personajes/Yuki_Tsukumo_(Volume_23).webp",
+      "image_url_large": "/images/personajes/Yuki_Tsukumo_(Volume_23)_large.webp",
+      "profile_url": "/images/personajes/Yuki_Tsukumo_(Volume_23)2.png",
+      "voice": "/voices/personajes/yukivoice.mp3",
       "group": "Independent"
     },
     {
@@ -2291,10 +2291,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Mei_Mei_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Mei_Mei_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Mei_Mei_292.png",
-      "voice": "http://localhost:3000/voices/personajes/meimeivoice.mp3",
+      "image_url": "/images/personajes/Mei_Mei_29.webp",
+      "image_url_large": "/images/personajes/Mei_Mei_29_large.jpg",
+      "profile_url": "/images/personajes/Mei_Mei_292.png",
+      "voice": "/voices/personajes/meimeivoice.mp3",
       "group": "Independent"
     },
     {
@@ -2316,10 +2316,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Aoi_Todou_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Aoi_Todou_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Aoi_Todou_292.png",
-      "voice": "http://localhost:3000/voices/personajes/todovoice.mp3",
+      "image_url": "/images/personajes/Aoi_Todou_29.webp",
+      "image_url_large": "/images/personajes/Aoi_Todou_29_large.jpg",
+      "profile_url": "/images/personajes/Aoi_Todou_292.png",
+      "voice": "/voices/personajes/todovoice.mp3",
       "group": "Jujutsu High Kyoto"
     },
     {
@@ -2341,9 +2341,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Yoshinobu_Gakuganji_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Yoshinobu_Gakuganji_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Yoshinobu_Gakuganji_292.png",
+      "image_url": "/images/personajes/Yoshinobu_Gakuganji_29.webp",
+      "image_url_large": "/images/personajes/Yoshinobu_Gakuganji_29_large.jpg",
+      "profile_url": "/images/personajes/Yoshinobu_Gakuganji_292.png",
       "voice": "None",
       "group": "Jujutsu High Kyoto"
     },
@@ -2366,10 +2366,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kasumi_Miwa_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Kasumi_Miwa_29_large.png",
-      "profile_url": "http://localhost:3000/images/personajes/Kasumi_Miwa_292.png",
-      "voice": "http://localhost:3000/voices/personajes/miwavoice.mp3",
+      "image_url": "/images/personajes/Kasumi_Miwa_29.webp",
+      "image_url_large": "/images/personajes/Kasumi_Miwa_29_large.png",
+      "profile_url": "/images/personajes/Kasumi_Miwa_292.png",
+      "voice": "/voices/personajes/miwavoice.mp3",
       "group": "Jujutsu High Kyoto"
     },
     {
@@ -2391,9 +2391,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Yu_Haibara_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Yu_Haibara_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Yu_Haibara_292.png",
+      "image_url": "/images/personajes/Yu_Haibara_29.webp",
+      "image_url_large": "/images/personajes/Yu_Haibara_29_large.jpg",
+      "profile_url": "/images/personajes/Yu_Haibara_292.png",
       "voice": "None",
       "group": "Former Jujutsu High student"
     },
@@ -2416,9 +2416,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Arata_Nitta.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Arata_Nitta_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Arata_Nitta2.png",
+      "image_url": "/images/personajes/Arata_Nitta.webp",
+      "image_url_large": "/images/personajes/Arata_Nitta_large.jpg",
+      "profile_url": "/images/personajes/Arata_Nitta2.png",
       "voice": "None",
       "group": "Jujutsu Sorcerer"
     },
@@ -2441,10 +2441,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Suguru_Geto_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Suguru_Geto_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Suguru_Geto_292.png",
-      "voice": "http://localhost:3000/voices/personajes/getovoice.mp3",
+      "image_url": "/images/personajes/Suguru_Geto_29.webp",
+      "image_url_large": "/images/personajes/Suguru_Geto_29_large.jpg",
+      "profile_url": "/images/personajes/Suguru_Geto_292.png",
+      "voice": "/voices/personajes/getovoice.mp3",
       "group": "Former Jujutsu High student"
     },
     {
@@ -2466,10 +2466,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kokichi_Muta_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Kokichi_Muta_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Kokichi_Muta_292.png",
-      "voice": "http://localhost:3000/voices/personajes/mechavoice.mp3",
+      "image_url": "/images/personajes/Kokichi_Muta_29.webp",
+      "image_url_large": "/images/personajes/Kokichi_Muta_29_large.jpg",
+      "profile_url": "/images/personajes/Kokichi_Muta_292.png",
+      "voice": "/voices/personajes/mechavoice.mp3",
       "group": "Jujutsu High Kyoto"
     },
     {
@@ -2491,10 +2491,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Mai_Zenin_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Mai_Zenin_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Mai_Zenin_292.png",
-      "voice": "http://localhost:3000/voices/personajes/maivoice.mp3",
+      "image_url": "/images/personajes/Mai_Zenin_29.webp",
+      "image_url_large": "/images/personajes/Mai_Zenin_29_large.webp",
+      "profile_url": "/images/personajes/Mai_Zenin_292.png",
+      "voice": "/voices/personajes/maivoice.mp3",
       "group": "Jujutsu High Kyoto"
     },
     {
@@ -2516,9 +2516,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Utahime_Iori_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Utahime_Iori_29_large.jpeg",
-      "profile_url": "http://localhost:3000/images/personajes/Utahime_Iori_292.png",
+      "image_url": "/images/personajes/Utahime_Iori_29.webp",
+      "image_url_large": "/images/personajes/Utahime_Iori_29_large.jpeg",
+      "profile_url": "/images/personajes/Utahime_Iori_292.png",
       "voice": "None",
       "group": "Jujutsu High Kyoto"
     },
@@ -2541,10 +2541,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Nobara_Kugisaki_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Nobara_Kugisaki_29_large.jpeg",
-      "profile_url": "http://localhost:3000/images/personajes/Nobara_Kugisaki_292.png",
-      "voice": "http://localhost:3000/voices/personajes/nobaravoice.mp3",
+      "image_url": "/images/personajes/Nobara_Kugisaki_29.webp",
+      "image_url_large": "/images/personajes/Nobara_Kugisaki_29_large.jpeg",
+      "profile_url": "/images/personajes/Nobara_Kugisaki_292.png",
+      "voice": "/voices/personajes/nobaravoice.mp3",
       "group": "Jujutsu High Tokyo"
     },
     {
@@ -2566,8 +2566,8 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kirara_Hoshi.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kirara_Hoshi_292.png",
+      "image_url": "/images/personajes/Kirara_Hoshi.webp",
+      "profile_url": "/images/personajes/Kirara_Hoshi_292.png",
       "voice": "None",
       "group": "Jujutsu High Tokyo"
     },
@@ -2590,8 +2590,8 @@
         "has_domain": true,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Kinji_Hakari_29.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kinji_Hakari_292.png",
+      "image_url": "/images/personajes/Kinji_Hakari_29.webp",
+      "profile_url": "/images/personajes/Kinji_Hakari_292.png",
       "voice": "None",
       "group": "Jujutsu High Tokyo"
     },
@@ -2614,10 +2614,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Panda_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Panda_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Panda_292.png",
-      "voice": "http://localhost:3000/voices/personajes/pandavoice.mp3",
+      "image_url": "/images/personajes/Panda_29.webp",
+      "image_url_large": "/images/personajes/Panda_29_large.webp",
+      "profile_url": "/images/personajes/Panda_292.png",
+      "voice": "/voices/personajes/pandavoice.mp3",
       "group": "Jujutsu High Tokyo"
     },
     {
@@ -2639,10 +2639,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Toge_Inumaki_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Toge_Inumaki_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Toge_Inumaki_292.png",
-      "voice": "http://localhost:3000/voices/personajes/togevoice.mp3",
+      "image_url": "/images/personajes/Toge_Inumaki_29.webp",
+      "image_url_large": "/images/personajes/Toge_Inumaki_29_large.webp",
+      "profile_url": "/images/personajes/Toge_Inumaki_292.png",
+      "voice": "/voices/personajes/togevoice.mp3",
       "group": "Jujutsu High Tokyo"
     },
     {
@@ -2664,10 +2664,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kento_Nanami_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Kento_Nanami_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kento_Nanami_292.png",
-      "voice": "http://localhost:3000/voices/personajes/nanamivoice.mp3",
+      "image_url": "/images/personajes/Kento_Nanami_29.webp",
+      "image_url_large": "/images/personajes/Kento_Nanami_29_large.webp",
+      "profile_url": "/images/personajes/Kento_Nanami_292.png",
+      "voice": "/voices/personajes/nanamivoice.mp3",
       "group": "Jujutsu High Tokyo"
     },
     {
@@ -2689,10 +2689,10 @@
         "has_domain": true,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Yuta_Okkotsu_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Yuta_Okkotsu_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Yuta_Okkotsu_292.png",
-      "voice": "http://localhost:3000/voices/personajes/yutavoice.mp3",
+      "image_url": "/images/personajes/Yuta_Okkotsu_29.webp",
+      "image_url_large": "/images/personajes/Yuta_Okkotsu_29_large.webp",
+      "profile_url": "/images/personajes/Yuta_Okkotsu_292.png",
+      "voice": "/voices/personajes/yutavoice.mp3",
       "group": "Jujutsu High Tokyo"
     },
     {
@@ -2714,10 +2714,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Maki_Zenin_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Maki_Zenin_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Maki_Zenin_292.png",
-      "voice": "http://localhost:3000/voices/personajes/makivoice.mp3",
+      "image_url": "/images/personajes/Maki_Zenin_29.webp",
+      "image_url_large": "/images/personajes/Maki_Zenin_29_large.webp",
+      "profile_url": "/images/personajes/Maki_Zenin_292.png",
+      "voice": "/voices/personajes/makivoice.mp3",
       "group": "Jujutsu High Tokyo"
     },
     {
@@ -2739,10 +2739,10 @@
         "has_domain": true,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Yuji_Itadori_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Yuji_Itadori_29_large.jpeg",
-      "profile_url": "http://localhost:3000/images/personajes/Yuji_Itadori_292.png",
-      "voice": "http://localhost:3000/voices/personajes/itadorivoice.mp3",
+      "image_url": "/images/personajes/Yuji_Itadori_29.webp",
+      "image_url_large": "/images/personajes/Yuji_Itadori_29_large.jpeg",
+      "profile_url": "/images/personajes/Yuji_Itadori_292.png",
+      "voice": "/voices/personajes/itadorivoice.mp3",
       "group": "Jujutsu High Tokyo"
     },
     {
@@ -2764,9 +2764,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Kiyotaka_Ijichi_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Kiyotaka_Ijichi_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Kiyotaka_Ijichi_292.png",
+      "image_url": "/images/personajes/Kiyotaka_Ijichi_29.webp",
+      "image_url_large": "/images/personajes/Kiyotaka_Ijichi_29_large.webp",
+      "profile_url": "/images/personajes/Kiyotaka_Ijichi_292.png",
       "voice": "None",
       "group": "Jujutsu High Tokyo"
     },
@@ -2789,9 +2789,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Akari_Nitta_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Akari_Nitta_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Akari_Nitta_292.png",
+      "image_url": "/images/personajes/Akari_Nitta_29.webp",
+      "image_url_large": "/images/personajes/Akari_Nitta_29_large.webp",
+      "profile_url": "/images/personajes/Akari_Nitta_292.png",
       "voice": "None",
       "group": "Jujutsu High Tokyo"
     },
@@ -2814,9 +2814,9 @@
         "has_domain": false,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Shoko_Ieiri_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Shoko_Ieiri_29_large.jpeg",
-      "profile_url": "http://localhost:3000/images/personajes/Shoko_Ieiri_292.png",
+      "image_url": "/images/personajes/Shoko_Ieiri_29.webp",
+      "image_url_large": "/images/personajes/Shoko_Ieiri_29_large.jpeg",
+      "profile_url": "/images/personajes/Shoko_Ieiri_292.png",
       "voice": "None",
       "group": "Jujutsu High Tokyo"
     },
@@ -2839,9 +2839,9 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Atsuya_Kusakabe_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Atsuya_Kusakabe_29_large.jpg",
-      "profile_url": "http://localhost:3000/images/personajes/Atsuya_Kusakabe_292.png",
+      "image_url": "/images/personajes/Atsuya_Kusakabe_29.webp",
+      "image_url_large": "/images/personajes/Atsuya_Kusakabe_29_large.jpg",
+      "profile_url": "/images/personajes/Atsuya_Kusakabe_292.png",
       "voice": "None",
       "group": "Jujutsu High Tokyo"
     },
@@ -2864,10 +2864,10 @@
         "has_domain": false,
         "has_rct": false
       },
-      "image_url": "http://localhost:3000/images/personajes/Megumi_Fushiguro_29.webp",
-      "image_url_large": "http://localhost:3000/images/personajes/Megumi_Fushiguro_29_large.webp",
-      "profile_url": "http://localhost:3000/images/personajes/Megumi_Fushiguro_292.png",
-      "voice": "http://localhost:3000/voices/personajes/megumivoice.mp3",
+      "image_url": "/images/personajes/Megumi_Fushiguro_29.webp",
+      "image_url_large": "/images/personajes/Megumi_Fushiguro_29_large.webp",
+      "profile_url": "/images/personajes/Megumi_Fushiguro_292.png",
+      "voice": "/voices/personajes/megumivoice.mp3",
       "group": "Jujutsu High Tokyo"
     },
     {
@@ -2889,10 +2889,10 @@
         "has_domain": true,
         "has_rct": true
       },
-      "image_url": "http://localhost:3000/images/personajes/Satoru_Gojo_29.png",
-      "image_url_large": "http://localhost:3000/images/personajes/Satoru_Gojo_29_large.png",
-      "profile_url": "http://localhost:3000/images/personajes/Satoru_Gojo_292.png",
-      "voice": "http://localhost:3000/voices/personajes/gojovoice.mp3",
+      "image_url": "/images/personajes/Satoru_Gojo_29.png",
+      "image_url_large": "/images/personajes/Satoru_Gojo_29_large.png",
+      "profile_url": "/images/personajes/Satoru_Gojo_292.png",
+      "voice": "/voices/personajes/gojovoice.mp3",
       "group": "Jujutsu High Tokyo"
     }
   ]
